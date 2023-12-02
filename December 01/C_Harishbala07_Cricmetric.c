@@ -2,15 +2,13 @@
 int main()
 {
    int a[10],i,n,sum=0;
-   printf("enter no of players :");
    scanf("%d",&n);
-   printf("enter scores of players :");
    for(i=0;i<n;i++)
      {
         scanf("%d",&a[i]);
         sum+=a[i];       
      }
-  printf("total score :%d\n",sum);
+  printf("%d",sum);
   int max=a[0];
   int maxp=0;
   for(i=1;i<n;i++)
@@ -21,5 +19,5 @@ int main()
          maxp=i;
        }
     }
-  printf("max scored player is in pos %d",maxp);
+  printf("%d",maxp);
 }
